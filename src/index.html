@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Дмитрий Наставшев - Веб-разработчик</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -26,7 +28,7 @@
     <div class="main">
         <div class="title__container">
             <h1>Привет<br>Я Дмитрий Наставшев</h1>
-            <h4>Фулл стук веб-разработчик</h4>
+            <h4>Фулл стек веб-разработчик</h4>
             <input type="submit" value="Обо мне">
             <input type="submit" value="Мои работы">
         </div>
@@ -35,11 +37,15 @@
     <div class="aboutMe">
         <div class="title__container">
             <h3>Обо мне</h3>
-
-            <img src="img/Me.jpg" alt="Тут должен быть я" width="250" height="250">
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, nam.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, nam.</p>
+            
+            <img class="line" src="img/line.png" alt="">
+            
+            <br><img class="me" src="img/man_gray.jpg" alt="Тут должен быть я">
+            
+            <div class="aboutMeText">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus soluta molestiae rerum aut enim explicabo expedita, tempora quos laborum quam in optio, reprehenderit obcaecati possimus minus harum at error quasi quo sed illum sint magni!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias accusantium asperiores cumque voluptates quasi dolorem, impedit ad a, unde? Assumenda tempore minima ab possimus, eius neque culpa excepturi aliquid cum magni odio fugit, nihil iusto.</p>
+            </div>
 
             <input type="submit" value="Скачать резюме">
         </div>
@@ -48,102 +54,125 @@
     <div class="mySkills">
         <div class="title__container">
            <h3>Что я умею</h3>
-            <ul>
-                <li>
-                    <img src="img/pc.png" alt="">
-                    <h4>Веб-дизайн</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, similique.</p>
-                </li>
-                
-                <li>
-                    <img src="img/skobka.png" alt="">
-                    <h4>Разработка</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur officia expedita veniam quod cupiditate quis praesentium minima soluta eaque et.</p>
-                </li>
-                
-                <li>
-                    <img src="img/rocket.png" alt="">
-                    <h4>CEO-Оптимизация</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, aut unde perferendis nobis.</p>
-                </li>
-                
-                <li>
-                    <img src="img/sound.png" alt="">
-                    <h4>Маркетинг</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore expedita, voluptatum perferendis blanditiis ad sapiente.</p>
-                </li>
-            </ul>
+           <img class="line" src="img/line.png" alt="">
+            <div class="skills">
+               <ul>
+                    <li>
+                        <img class="skillIcon" src="img/pc.png" alt="">
+                        <h4>Веб-дизайн</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, similique.</p>
+                    </li>
+
+                    <li>
+                        <img class="skillIcon" src="img/skobka.png" alt="">
+                        <h4>Разработка</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur officia expedita veniam quod cupiditate quis praesentium minima soluta eaque et.</p>
+                    </li>
+
+                    <li>
+                        <img class="skillIcon" src="img/rocket.png" alt="">
+                        <h4>CEO-Оптимизация</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, aut unde perferendis nobis.</p>
+                    </li>
+
+                    <li>
+                        <img class="skillIcon" src="img/sound.png" alt="">
+                        <h4>Маркетинг</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore expedita, voluptatum perferendis blanditiis ad sapiente.</p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     
     <div class="cases">
         <div class="title__container">
             <h3>Кейсы</h3>
+            <img class="line" src="img/line.png" alt="">
             
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, illum. Voluptatibus, autem.</p>
             
-            <img src="img/site.png" alt="">
             
-            <p>
-                <b>CLIENT:<br></b>
-                <small>Какая-то компания</small>
-            </p>
             
-            <p>
-                <b>WEBSITE:<br></b>
-                <small>http://www.somedomain.com</small>
-            </p>
-            
-            <p>
-                <b>Название проекта<br></b>
-                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus repudiandae doloribus nemo facere excepturi est quis, voluptas accusantium deleniti laborum, ipsa eos. Impedit nemo omnis culpa a dolorem, vitae dolores recusandae excepturi ut animi modi commodi quaerat laudantium velit soluta?</small>
-            </p>
-            
-            <input type="submit" value="VISIT LIVE SITE">
+            <img class="caseImg" src="img/site.jpg" alt="">
+            <div class="case">
+                <div class="caseInfo">
+                    <p>
+                        <b>CLIENT:<br></b>
+                        <small>Какая-то компания</small>
+                    </p>
+
+                    <p>
+                        <b>WEBSITE:<br></b>
+                        <small><a href="http://www.somedomain.com" target="blank">http://www.somedomain.com</a></small>
+                    </p>
+                </div>
+                <div class="caseDescription">
+                    <p>
+                        <b>Название проекта<br></b>
+                        <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus repudiandae doloribus nemo facere excepturi est quis, voluptas accusantium deleniti laborum, ipsa eos. </small>
+                    </p>
+                </div>
+                <input type="submit" value="VISIT LIVE SITE">
+            </div>
         </div>
     </div>
     
     <div class="costCalculation">
         <div class="title__container">
             <h2>Расчет стоимости</h2>
-            <h3>Тип сайта</h3>
             
-            <select name="siteList" id="siteList">
-                <option disabled selected>Выберите пункт...</option>
-                <option value="1">Лендинг</option>
-                <option value="2">Корпоративный сайт</option>
-                <option value="3">Интернет магазин</option>
-            </select>
-            
-            <h3>Дизайн</h3>
-            <select name="designList" id="designList" >
-                <option disabled selected>Выберите пункт...</option>
-                <option value="1">Хороший</option>
-                <option value="2">Плохой</option>
-                <option value="3">Какой хочешь:D</option>
-            </select>
-            
-            <h3>Адаптивность</h3>
-            <select name="adaptList" id="adaptList">
-                <option disabled selected>Выберите пункт...</option>
-                <option value="1">Для мобильных устройств</option>
-                <option value="2">Для компьютеров</option>
-                <option value="3">Для всего на свете</option>
-            </select>
-            
-            <div class="results">
-                <h4>СРОКИ</h4>
-                <h4>0</h4>
-                
-                <h4>СТОИМОСТЬ</h4>
-                <h4>0</h4>
+            <div class="calculator">
+                <h3>Тип сайта</h3>
+                <select class="calcMenu" name="siteList" id="siteList">
+                    <option disabled selected>Выберите пункт...</option>
+                    <option value="1">Лендинг</option>
+                    <option value="2">Корпоративный сайт</option>
+                    <option value="3">Интернет магазин</option>
+                </select>
+
+                <h3>Дизайн</h3>
+                <select class="calcMenu" name="designList" id="designList" >
+                    <option disabled selected>Выберите пункт...</option>
+                    <option value="1">Хороший</option>
+                    <option value="2">Плохой</option>
+                    <option value="3">Какой хочешь:D</option>
+                </select>
+
+                <h3>Адаптивность</h3>
+                <select class="calcMenu" name="adaptList" id="adaptList">
+                    <option disabled selected>Выберите пункт...</option>
+                    <option value="1">Для мобильных устройств</option>
+                    <option value="2">Для компьютеров</option>
+                    <option value="3">Для всего на свете</option>
+                </select>
+
+                <img src="img/line_2.png" alt="" width="100%">
+
+                <div class="results">
+                    <div class="timing">
+                        <h3>Сроки</h3>
+                    </div>
+
+                    <div class="totalTiming">
+                        <h3>0</h3>
+                    </div>
+
+                    <div class="cost">
+                        <h3>Стоимость</h3>
+                    </div>
+                    <div class="totalCost">
+                        <h3>0</h3>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     
     <div class="statistic">
         <div class="title__container">
-            <h2>Немного статистики</h2>
+            <h3>Немного статистики</h3>
+            <img class="line" src="img/line.png" alt="">
             <ul>
                 <li>
                     <img src="img/smile.png" alt="">
@@ -172,21 +201,30 @@
     <div class="feedback">
         <div class="title__container">
             <h3>Отзывы</h3>
+            <img class="line" src="img/line.png" alt="">
             
-            <img src="img/Me.jpg" alt="Здесь кто-то, но не я" width="150" height="150">
+            <br><img class="me" src="img/Me.jpg" alt="Здесь кто-то, но не я" width="150" height="150">
+            
             <p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ad natus mollitia numquam, animi dolorum cupiditate autem, voluptatibus accusantium dolore veniam reprehenderit maxime velit iste ipsum fugiat repellat error iusto.</small></p>
             
             <p><small><b>Михаил</b>, Ген директор ПАО "Газпром"</small></p>
+            
+            <div class="fbListImg">
+                <img src="img/orangePoint.png" alt="">
+                <img src="img/point.png" alt="">
+                <img src="img/point.png" alt="">
+            </div>
         </div>
     </div>
     
     <div class="contacts">
         <div class="title__container">
-            <h2>Мои контакты</h2>
+            <h3>Мои контакты</h3>
+            <img class="line" src="img/line.png" alt="">
             
             <p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis at dolore maiores!</small></p>
             
-            <ul>
+            <ul class="contactsUrl">
                 <li>
                     <img src="img/gps.png" alt="">
                     <p>Санкт-Петербург<br>Невский проспект 11</p>
@@ -201,25 +239,19 @@
                 </li>
             </ul>
             
-            <h3>Оставьте мне сообщение</h3>
+            <div class="msg">
             
-            <form action="#">
-                <input type="text" name="name_input" placeholder="Имя" width="25%">
-                <input type="text" name="email_input" placeholder="Email" width="25%">
-                
-                <br><textarea name="message" id="1" cols="30" rows="10"></textarea>
-                
-                <br><input type="submit" value="Отправить">
-            </form>
-            
-            <ul>
-                <li><a href="https://facebook.com" target = "blank"><img src="img/facebook.png" alt=""></a></li>
-                <li><a href="https://twitter.com" target = "blank"><img src="img/twitter.png" alt=""></a></li>
-                <li><a href="https://vk.com" target = "blank"><img src="img/ball.png" alt=""></a></li>
-                <li><a href="https://github.com" target = "blank"><img src="img/github.png" alt=""></a></li>
-                <li><a href="https://www.instagram.com" target = "blank"><img src="img/inst.png" alt=""></a></li>
-                <li><a href="https://vk.com" target = "blank"><img src="img/in.png" alt=""></a></li>
-            </ul>
+                <h2>Оставьте мне сообщение</h2>
+
+                <form action="#">
+                    <input class="infoForm" type="text" name="name_input" placeholder="Имя">
+                    <input class="infoForm" type="text" name="email_input" placeholder="Email">
+
+                    <br><textarea name="message" id="1" placeholder="Сообщение"></textarea>
+
+                    <br><input class="sendForm" type="submit" value="Отправить">
+                </form>
+            </div>
         </div>
     </div>
     

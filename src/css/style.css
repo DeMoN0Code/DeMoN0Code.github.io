@@ -1,0 +1,423 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+p{
+    font-size: 16px;
+    color: #3f495a;
+}
+
+.title__container{
+    float: left;
+    text-align: center;
+}
+
+.title__container h1{
+    font-size: 48px;
+    color: #2c384a;
+    text-align: center;
+}
+
+.title__container h2{
+    font-size: 34px;
+    color: #1c2534;
+    text-align: center;
+    font-weight: bold;
+}
+
+.title__container h3{
+    font-size: 24px;
+    color: #323e4f;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.title__container h4{
+    font-size: 16px;
+    color: #79818d;
+    text-align: center;
+}
+
+input{
+    padding: 8px 12px;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #6d7682;
+    background: none;
+}
+
+/**/
+
+nav{
+    width: 100%;
+    height: 60px;
+    background: #344051;
+}
+
+.logo{
+    color: white;
+    font-size: 24px;
+    line-height: 60px;
+    padding-left: 10%;
+    float: left;
+}
+
+.menu{
+    width: 45%
+    float: left;
+    padding-left: 55%;
+}
+
+.menu li{
+    float: left;
+    line-height: 60px;
+    color: white;
+    margin-right: 5%;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/**/
+
+.main{
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/man.png) 95% 100%/auto 85% no-repeat, url(../img/background.jpg) center/cover no-repeat;
+}
+
+.main>.title__container{
+    margin: 26% 0px 0px 5%;
+}
+
+.main>.title__container h4{
+    margin-top: 10px;
+}
+
+.main>.title__container input{
+    margin: 40px 8px 0px 8px;
+}
+
+/**/
+
+.aboutMe{
+    width: 100%;
+    height: 70%;
+    background: #fcfdfd;
+}
+
+.aboutMe>.title__container h3{
+    margin: 40px 0px 20px 0px;
+}
+
+.aboutMe>.title__container>.me{
+    border: 1px solid none;
+    border-radius: 50%;
+}
+
+.aboutMe>.title__container>.aboutMeText{
+    width: 40%;
+    text-align: left;
+    margin: 15px auto 0px auto;
+}
+
+.aboutMe>.title__container>.aboutMeText p{
+    margin-bottom: 30px;
+}
+
+.aboutMe>.title__container input{
+    background: url(../img/download.png) 5% 48% no-repeat;
+    padding-left: 2%
+}
+
+/**/
+
+.mySkills{
+    width: 100%;
+    height: 523px;
+    background: url(../img/background_2.jpg) center/cover no-repeat;
+}
+
+.mySkills>.title__container h3{
+    margin: 40px auto 20px auto;
+}
+
+.mySkills>.title__container>.skills{
+    width: 100%;
+    height: 160px;
+    margin-top: 170px;
+}
+
+.mySkills>.title__container>.skills li{
+    width: 25%;
+    height: 160px;
+    float: left;
+}
+
+.mySkills>.title__container>.skills li h4{
+    color: #cf7600;
+    font-weight: bold;
+    margin: 30px 0px 10px 0px;
+}
+
+/**/
+
+.cases{
+    width: 100%;
+    height: 100%;
+    background: #fcfdfd;
+}
+
+.cases>.title__container h3{
+    margin: 40px auto 20px auto;
+}
+
+.cases>.title__container>p{    
+    margin: 20px auto 35px auto;
+}
+
+.cases>.title__container>img.caseImg{
+    width: 80%;
+    display: block;
+    margin-left: 120px;
+}
+
+.cases>.title__container>.case{
+    width: 80%;
+    height: 80%;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.cases>.title__container>.case>.caseInfo{
+    width: 20%;
+    height: 20%;
+    float: left;
+}
+
+.cases>.title__container>.case>.caseDescription{
+    width: 60%;
+    height: 20%;
+    margin-left: 10%;
+}
+
+.cases>.title__container input{
+    background: #63b5ae;
+    color: white;
+}
+
+/**/
+
+.costCalculation{
+    width: 100%;
+    height: 70%;
+    background: #fcfdfd;
+}
+
+.costCalculation>.title__container h2{
+    margin: 0px auto 40px auto;
+}
+
+.costCalculation>.title__container h3{
+    text-align: left;
+}
+
+.costCalculation>.title__container>.calculator{
+    width: 60%;
+    height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.costCalculation>.title__container>.calculator>.calcMenu{
+    width: 100%;
+    padding: 12px 12px;
+    background: #eee;
+    color: #999;
+    margin: 10px 0px 30px 0px;
+}
+
+.costCalculation>.title__container>.calculator>.results{
+    width: 100%;
+    height: 120px;
+    float: right;
+}
+
+.costCalculation>.title__container>.calculator>.results>.timing{
+    width: 80%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.costCalculation>.title__container>.calculator>.results>.totalTiming{
+    float: right;
+}
+
+.costCalculation>.title__container>.calculator>.results>.cost{
+    width: 80%;
+    float: left;
+}
+
+.costCalculation>.title__container>.calculator>.results>.totalCost{
+    float: right;
+}
+
+/**/
+
+.statistic{
+    width: 100%;
+    height: 523px;
+    background: url(../img/background_2.jpg) center/cover no-repeat;
+    
+}
+
+.statistic>.title__container{
+    width: 100%;
+}
+
+
+.statistic>.title__container h3{
+    margin: 40px auto 20px auto;
+}
+
+.statistic>.title__container li{
+    width: 25%;
+    height: 150px;
+    float: left;
+    margin-top: 130px;
+}
+
+.statistic>.title__container img{
+    margin-bottom: 20px;
+}
+
+.statistic>.title__container b{
+    font-size: 40px;
+}
+
+.statistic>.title__container p{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/**/
+
+.feedback{
+    width: 100%;
+    height: 523px;
+    background: white;   
+}
+
+.feedback>.title__container h3{
+    margin: 40px auto 20px auto;
+}
+
+.feedback>.title__container>.me{
+    border: 0px solid;
+    border-radius: 50%;
+    margin-top: 60px;
+}
+
+.feedback>.title__container p{
+    width: 60%;
+    margin: 20px auto;
+}
+
+.feedback>.title__container>.fbListImg{
+    width: 10%;
+    margin: auto;
+}
+
+.feedback>.title__container>.fbListImg img{
+    margin-left: 5px;
+}
+
+/**/
+
+.contacts{
+    width: 100%;
+    height: 808px;
+    background: url(../img/background_3.jpg) center/cover no-repeat;
+}
+
+.contacts>.title__container{
+    width: 100%;
+    height: 808px;
+}
+
+.contacts>.title__container h2{
+    color: white;
+}
+
+.contacts>.title__container h3{
+    margin: 60px auto 20px auto;
+    color: white;
+}
+
+.contacts>.title__container p{
+    color: white;
+}
+
+.contacts>.title__container>p{
+    margin-top: 15px;
+}
+
+.contacts>.title__container>.contactsUrl{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contacts>.title__container>.contactsUrl img{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.contacts>.title__container>.contactsUrl li{
+    width:  33%;
+    height: 150px;
+    float: left;
+    margin-top: 40px;
+}
+
+.contacts>.title__container>.msg{
+    width: 100%;
+    float: left;
+}
+
+.contacts>.title__container>.msg form .infoForm{
+    width: 30%;
+    margin: 15px 5px;
+    border-radius: 0px;
+    background: white;
+    opacity: 0.7;
+}
+
+.contacts>.title__container>.msg form textarea{
+    width: calc(60% + 10px);
+    height: 100px;
+    padding: 8px 12px;
+    opacity: 0.7;
+}
+
+.contacts>.title__container>.msg form .sendForm{
+    color: white;
+    margin-top: 40px;
+    padding: 14px 22px;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    background: #354051;
+}
+
+footer>.copyright{
+    line-height: 60px;
+    text-align: center;
+}
+
+footer>.copyright p{
+    color: white;
+    font-size: 10px;
+}
