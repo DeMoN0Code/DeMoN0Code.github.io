@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: Arial, sans-serif;
 }
@@ -47,12 +51,25 @@ input{
     background: none;
 }
 
+.anker{
+    position: relative;
+    bottom: 90px;
+    left: 0px;
+}
+
+.mainAnker{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 /**/
 
 nav{
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
 }
 
 .logo{
@@ -82,7 +99,7 @@ nav{
 
 .main{
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/man.png) 95% 100%/auto 85% no-repeat, url(../img/background.jpg) center/cover no-repeat;
 }
 
@@ -270,9 +287,8 @@ nav{
 
 .statistic{
     width: 100%;
-    height: 523px;
-    background: url(../img/background_2.jpg) center/cover no-repeat;
-    
+    height: 404px;
+    background: url(../img/background_4.jpg) center/cover no-repeat fixed;
 }
 
 .statistic>.title__container{
@@ -288,7 +304,11 @@ nav{
     width: 25%;
     height: 150px;
     float: left;
-    margin-top: 130px;
+    margin-top: 70px;
+}
+
+.statistic>.title__container li img{
+    height: 75px;
 }
 
 .statistic>.title__container img{
@@ -424,4 +444,138 @@ footer>.copyright{
 footer>.copyright p{
     color: white;
     font-size: 10px;
+}
+
+/*ANIMATION*/
+
+a{
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    transition: all 0.2s;
+    color: #d17700;
+}
+
+.logo a:hover{
+    color: white;
+}
+
+.logo{
+    animation: invis 2s ease;
+}
+
+.menu li a{
+    transform: scale(1);
+}
+
+.menu li a:active{
+    display: inline-block;
+    transform: scale(1.1);
+}
+
+.menu li:nth-child(1){
+    animation: setMenu 0.4s ease forwards, invis 0.4s ease;
+}
+
+.menu li:nth-child(2){
+    animation: setMenu 0.8s ease forwards, invis 0.8s ease;
+}
+
+.menu li:nth-child(3){
+    animation: setMenu 1.2s ease forwards, invis 1.2s ease;
+}
+
+.menu li:nth-child(4){
+    animation: setMenu 1.6s ease forwards, invis 1.6s ease;
+}
+
+.menu li:nth-child(5){
+    animation: setMenu 2.0s ease forwards, invis 2s ease;
+}
+
+.menu li:nth-child(6){
+    animation: setMenu 2.4s ease forwards, invis 2.4s ease;
+}
+
+.main>.title__container{
+    animation: setMainMenu 2s ease forwards, invis 2s ease;
+}
+
+.main>.title__container input{
+    transition: all 0.2s;
+}
+
+.main>.title__container input:hover{
+    color: white;
+    background: #2c384a;
+    opacity: 0.7;
+}
+
+.main>.title__container input:active{
+    transform: scale(1.1);
+}
+
+.aboutMe>.title__container input{
+    transition: all 0.2s;
+}
+
+.aboutMe>.title__container input:hover{
+    transform: scale(1.1);
+}
+
+.contacts>.title__container>.msg form .sendForm{
+    transition: all 0.2s;
+}
+
+.contacts>.title__container>.msg form .sendForm:hover{
+    padding: 16px 24px;
+    color: #d17700;
+    background: #2c384a;
+    opacity: 0.7;
+}
+
+.cases>.title__container input{
+    transition: all 0.2s;
+}
+
+.cases>.title__container input:hover{
+    background: #d17700;
+    color: black;
+}
+
+/*KEYFRAMES*/
+
+@keyframes invis{
+    from{
+        opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes setMenu{
+    from{
+        margin-top: -90px;
+    }
+    
+    to{
+        margin-top: 0;
+    }
+}
+
+@keyframes setMainMenu{
+    from{
+        margin-left: -300px;
+    }
+    
+    to{
+        margin-left: 5%;
+    }
 }
