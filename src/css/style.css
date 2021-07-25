@@ -199,6 +199,7 @@ nav{
 
 .cases>.title__container>img.caseImg{
     width: 80%;
+    height: 80%;
     display: block;
     margin-left: 120px;
 }
