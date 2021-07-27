@@ -3,9 +3,21 @@ html{
     font-family: Arial, sans-serif;
 }
 
+p{
+    font-size: 14px;
+    color: #38475a;
+}
+
 h1{
     font-size: 60px;
     color: #223549;
+    font-weight: bold;
+}
+
+h2{
+    color: #1a2e43;
+    font-size: 26px;
+    font-weight: bold;
 }
 
 h4{
@@ -76,13 +88,36 @@ nav a:hover{
     margin-top: 40px;
 }
 
+/**/
+
+.aboutMe{
+    width: 100%;
+    height: 716px;
+    background: #fcfdfd;
+}
+
+.aboutMe .title__container{
+    width: 100%;
+    height: 100%;
+}
+
+.aboutMe .title__container p{
+    margin: 20px 0px;
+}
+
+.aboutMe .title__container img.manImg{
+    margin-top: 80px;
+}
+
+/*MEDIA*/
+
 @media (max-width: 991px) {
     .title__container{
         position: relative;
         z-index: 3;
     }
     
-    .title__container h1, .title__container h4, .title__container button{
+    .main .title__container h1, .main .title__container h4, .main .title__container button{
         color: white;
     }
     
