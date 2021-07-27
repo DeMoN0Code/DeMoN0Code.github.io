@@ -1,271 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Дмитрий Наставшев - Веб-разработчик</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="logo"><a href="#main">Дмитрий Наставшев</a></div>
-            <div class="menu">
-               <ul>
-                    <li><a href="#aboutMe">Обо мне</a></li>
-                    <li><a href="#mySkills">Услуги</a></li>
-                    <li><a href="#cases">Кейсы</a></li>
-                    <li><a href="#price">Прайс</a></li>
-                    <li><a href="#feedback">Отзывы</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                </ul>
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-lg-3 col-7">
+                        <div class="logo">
+                            <a href="#">Дмитрий Наставшев</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-8 offset-xl-3 offset-lg-1 d-none d-lg-block">
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#">Обо мне</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Кейсы</a></li>
+                                <li><a href="#">Прайс</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-5 d-lg-none d-flex justify-content-end align-items-center">
+                        <div class="mobileMenu">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Навигация
+                                </button>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                                    <li><a class="dropdown-item" href="#">Услуги</a></li>
+                                    <li><a class="dropdown-item" href="#">Кейсы</a></li>
+                                    <li><a class="dropdown-item" href="#">Прайс</a></li>
+                                    <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                                    <li><a class="dropdown-item" href="#">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
     
     <section class="main">
-        <div class="title__container">
-            <a class="mainAnker" name="main"></a>
-            <h1>Привет<br>Я Дмитрий Наставшев</h1>
-            <h4>Фулл стек веб-разработчик</h4>
-            <a href="#aboutMe"><input type="button" value="Обо мне"></a>
-            <a href="#cases"><input type="button" value="Мои работы"></a>
-        </div>
-    </section>
-    
-    <section class="aboutMe">
-        <div class="title__container">
-            <h3><a class="anker" name="aboutMe"></a>Обо мне</h3>
-            
-            <img class="line" src="img/line.png" alt="">
-            
-            <br><img class="me" src="img/man_gray.jpg" alt="Тут должен быть я">
-            
-            <div class="aboutMeText">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus soluta molestiae rerum aut enim explicabo expedita, tempora quos laborum quam in optio, reprehenderit obcaecati possimus minus harum at error quasi quo sed illum sint magni!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias accusantium asperiores cumque voluptates quasi dolorem, impedit ad a, unde? Assumenda tempore minima ab possimus, eius neque culpa excepturi aliquid cum magni odio fugit, nihil iusto.</p>
-            </div>
-
-            <input type="button" value="Скачать резюме">
-        </div>
-    </section>
-    
-    <section class="mySkills">
-        <div class="title__container">
-           <h3><a class="anker" name="mySkills"></a>Что я умею</h3>
-           <img class="line" src="img/line.png" alt="">
-            <div class="skills">
-               <ul>
-                    <li>
-                        <img class="skillIcon" src="img/pc.png" alt="">
-                        <h4>Веб-дизайн</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, similique.</p>
-                    </li>
-
-                    <li>
-                        <img class="skillIcon" src="img/skobka.png" alt="">
-                        <h4>Разработка</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur officia expedita veniam quod cupiditate quis praesentium minima soluta eaque et.</p>
-                    </li>
-
-                    <li>
-                        <img class="skillIcon" src="img/rocket.png" alt="">
-                        <h4>CEO-Оптимизация</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, aut unde perferendis nobis.</p>
-                    </li>
-
-                    <li>
-                        <img class="skillIcon" src="img/sound.png" alt="">
-                        <h4>Маркетинг</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore expedita, voluptatum perferendis blanditiis ad sapiente.</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    
-    <section class="cases">
-        <div class="title__container">
-            <h3><a class="anker" name="cases"></a>Кейсы</h3>
-            <img class="line" src="img/line.png" alt="">
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, illum. Voluptatibus, autem.</p>
-            
-            
-            
-            <img class="caseImg" src="img/site.png" alt="">
-            <div class="case">
-                <div class="caseInfo">
-                    <p>
-                        <b>CLIENT:<br></b>
-                        <small>Какая-то компания</small>
-                    </p>
-
-                    <p>
-                        <b>WEBSITE:<br></b>
-                         <small>http://www.somedomain.com</small>
-                    </p>
-                </div>
-                <div class="caseDescription">
-                    <p>
-                        <b>Название проекта<br></b>
-                        <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus repudiandae doloribus nemo facere excepturi est quis, voluptas accusantium deleniti laborum, ipsa eos. </small>
-                    </p>
-                </div>
-                <a href="http://www.somedomain.com" target="_blank"><input type="submit" value="VISIT LIVE SITE"></a>
-            </div>
-        </div>
-    </section>
-    
-    <section class="costCalculation">
-        <div class="title__container">
-            <h2><a class="anker" name="price"></a>Расчет стоимости</h2>
-            
-            <div class="calculator">
-                <h3>Тип сайта</h3>
-                <select class="calcMenu" name="siteList" id="siteList">
-                    <option disabled selected>Выберите пункт...</option>
-                    <option value="1">Лендинг</option>
-                    <option value="2">Корпоративный сайт</option>
-                    <option value="3">Интернет магазин</option>
-                </select>
-
-                <h3>Дизайн</h3>
-                <select class="calcMenu" name="designList" id="designList" >
-                    <option disabled selected>Выберите пункт...</option>
-                    <option value="1">Хороший</option>
-                    <option value="2">Плохой</option>
-                    <option value="3">Какой хочешь:D</option>
-                </select>
-
-                <h3>Адаптивность</h3>
-                <select class="calcMenu" name="adaptList" id="adaptList">
-                    <option disabled selected>Выберите пункт...</option>
-                    <option value="1">Для мобильных устройств</option>
-                    <option value="2">Для компьютеров</option>
-                    <option value="3">Для всего на свете</option>
-                </select>
-
-                <img src="img/line_2.png" alt="" width="100%">
-
-                <div class="results">
-                    <div class="timing">
-                        <h3>Сроки</h3>
-                    </div>
-
-                    <div class="totalTiming">
-                        <h3>0</h3>
-                    </div>
-
-                    <div class="cost">
-                        <h3>Стоимость</h3>
-                    </div>
-                    <div class="totalCost">
-                        <h3>0</h3>
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <div class="col-xl-6 col-lg-9 col-12 text-center">
+                    <div class="title__container">
+                        <h1>Привет<br>Я Дмитрий Наставшев</h1>
+                        <h4>Фулл стек веб-разработчик</h4>
+                        <div class="mainButtons">
+                            <ul class="d-flex justify-content-center">
+                                <li><a href="#"><button type="button" class="btn btn-outline-secondary">Обо мне</button></a></li>
+                                <li><a href="#"><button type="button" class="btn btn-outline-secondary">Мои работы</button></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <section class="statistic">
-        <div class="title__container">
-            <h3>Немного статистики</h3>
-            <img class="line" src="img/line.png" alt="">
-            <ul>
-                <li>
-                    <img src="img/smile.png" alt="">
-                    <p><b>120</b></p>
-                    <p><small>СЧАСТЛИВЫХ КЛИЕНТОВ</small></p>
-                </li>
-                <li>
-                    <img src="img/orangeSkobka.png" alt="">
-                    <p><b>4,600</b></p>
-                    <p><small>ЧАСОВ РАБОТЫ</small></p>
-                </li>
-                <li>
-                    <img src="img/bird.png" alt="">
-                    <p><b>340</b></p>
-                    <p><small>ПРОЕКТОВ ЗАВЕРШЕНО</small></p>
-                </li>
-                <li>
-                    <img src="img/winner.png" alt="">
-                    <p><b>23</b></p>
-                    <p><small>НАГРАД ПОЛУЧЕНО</small></p>
-                </li>
-            </ul>
-        </div>
-    </section>
-    
-    <section class="feedback">
-        <div class="title__container">
-            <h3><a class="anker" name="feedback"></a>Отзывы</h3>
-            <img class="line" src="img/line.png" alt="">
-            
-            <br><img class="me" src="img/Me.jpg" alt="Здесь кто-то, но не я" width="150" height="150">
-            
-            <p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ad natus mollitia numquam, animi dolorum cupiditate autem, voluptatibus accusantium dolore veniam reprehenderit maxime velit iste ipsum fugiat repellat error iusto.</small></p>
-            
-            <p><small><b>Михаил</b>, Ген директор ПАО "Газпром"</small></p>
-            
-            <div class="fbListImg">
-                <img src="img/orangePoint.png" alt="">
-                <img src="img/point.png" alt="">
-                <img src="img/point.png" alt="">
-            </div>
-        </div>
-    </section>
-    
-    <section class="contacts">
-        <div class="title__container">
-            <h3><a class="anker" name="contacts"></a>Мои контакты</h3>
-            <img class="line" src="img/line.png" alt="">
-            
-            <p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis at dolore maiores!</small></p>
-            
-            <ul class="contactsUrl">
-                <li>
-                    <img src="img/gps.png" alt="">
-                    <p>Санкт-Петербург<br>Невский проспект 11</p>
-                </li>
-                <li>
-                    <img src="img/message.png" alt="">
-                    <p>info@companyname.com</p>
-                </li>
-                <li>
-                    <img src="img/mobile.png" alt="">
-                    <p>+7 999 999-99-99</p>
-                </li>
-            </ul>
-            
-            <div class="msg">
-            
-                <h2>Оставьте мне сообщение</h2>
-
-                <form action="#">
-                    <input class="infoForm" type="text" name="name_input" placeholder="Имя">
-                    <input class="infoForm" type="text" name="email_input" placeholder="Email">
-
-                    <br><textarea name="message" id="1" placeholder="Сообщение"></textarea>
-
-                    <br><input class="sendForm" type="submit" value="Отправить">
-                </form>
-            </div>
-        </div>
-    </section>
-    
-    <section class="maps">
-        
-    </section>
-    
-    <footer>
-       <div class="copyright">
-           <p>Copyright © 2021 Дмитрий Наставшев. Design by Web</p>
-       </div>
-    </footer>
-    
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

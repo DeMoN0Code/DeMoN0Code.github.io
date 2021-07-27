@@ -1,98 +1,55 @@
 html{
     scroll-behavior: smooth;
-}
-
-body{
     font-family: Arial, sans-serif;
 }
 
-p{
+h1{
+    font-size: 60px;
+    color: #223549;
+}
+
+h4{
     font-size: 16px;
-    color: #3f495a;
+    color: #76828e;
 }
-
-.title__container{
-    float: left;
-    text-align: center;
-}
-
-.title__container h1{
-    font-size: 48px;
-    color: #2c384a;
-    text-align: center;
-}
-
-.title__container h2{
-    font-size: 34px;
-    color: #1c2534;
-    text-align: center;
-    font-weight: bold;
-}
-
-.title__container h3{
-    font-size: 24px;
-    color: #323e4f;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.title__container h4{
-    font-size: 16px;
-    color: #79818d;
-    text-align: center;
-}
-
-input{
-    padding: 8px 12px;
-    border: 1px solid;
-    border-radius: 5px;
-    color: #6d7682;
-    background: none;
-}
-
-.anker{
-    position: relative;
-    bottom: 90px;
-    left: 0px;
-}
-
-.mainAnker{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-/**/
 
 nav{
     width: 100%;
     height: 60px;
-    background: #344051;
+    background: #2b3e51;
     position: fixed;
+    z-index: 10;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:visited{
+    color: white;
+}
+
+nav a:hover{
+    color: white;
 }
 
 .logo{
-    color: white;
-    font-size: 24px;
     line-height: 60px;
-    padding-left: 10%;
-    float: left;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .menu{
-    width: 45%
     float: left;
-    padding-left: 55%;
+    line-height: 60px;
 }
 
 .menu li{
     float: left;
-    line-height: 60px;
-    color: white;
-    margin-right: 5%;
-    font-size: 14px;
+    margin-right: 30px;
     text-transform: uppercase;
+    font-size: 14px;
 }
 
 /**/
@@ -101,482 +58,42 @@ nav{
     width: 100%;
     height: 100%;
     background: url(../img/man.png) 95% 100%/auto 85% no-repeat, url(../img/background.jpg) center/cover no-repeat;
+    position: relative;
 }
 
-.main>.title__container{
-    margin: 26% 0px 0px 5%;
-}
-
-.main>.title__container h4{
-    margin-top: 10px;
-}
-
-.main>.title__container input{
-    margin: 40px 8px 0px 8px;
-}
-
-/**/
-
-.aboutMe{
-    width: 100%;
-    height: 70%;
-    background: #fcfdfd;
-}
-
-.aboutMe>.title__container h3{
-    margin: 40px 0px 20px 0px;
-}
-
-.aboutMe>.title__container>.me{
-    border: 1px solid none;
-    border-radius: 50%;
-}
-
-.aboutMe>.title__container>.aboutMeText{
-    width: 40%;
-    text-align: left;
-    margin: 15px auto 0px auto;
-}
-
-.aboutMe>.title__container>.aboutMeText p{
-    margin-bottom: 30px;
-}
-
-.aboutMe>.title__container input{
-    background: url(../img/download.png) 5% 48% no-repeat;
-    padding-left: 2%
-}
-
-/**/
-
-.mySkills{
-    width: 100%;
-    height: 523px;
-    background: url(../img/background_2.jpg) center/cover no-repeat;
-}
-
-.mySkills>.title__container h3{
-    margin: 40px auto 20px auto;
-}
-
-.mySkills>.title__container>.skills{
-    width: 100%;
-    height: 160px;
-    margin-top: 170px;
-}
-
-.mySkills>.title__container>.skills li{
-    width: 25%;
-    height: 160px;
-    float: left;
-}
-
-.mySkills>.title__container>.skills li h4{
-    color: #cf7600;
-    font-weight: bold;
-    margin: 30px 0px 10px 0px;
-}
-
-.mySkills>.title__container>.skills li img{
-    height: 50px;
-}
-
-/**/
-
-.cases{
+.title__container{
     width: 100%;
     height: 100%;
-    background: #fcfdfd;
 }
 
-.cases>.title__container h3{
-    margin: 40px auto 20px auto;
-}
-
-.cases>.title__container>p{    
-    margin: 20px auto 35px auto;
-}
-
-.cases>.title__container>img.caseImg{
-    width: 80%;
-    height: 80%;
-    display: block;
-    margin-left: 120px;
-}
-
-.cases>.title__container>.case{
-    width: 80%;
-    height: 80%;
-    text-align: left;
-    margin-left: 10%;
-}
-
-.cases>.title__container>.case>.caseInfo{
-    width: 20%;
-    height: 20%;
+.mainButtons li{
     float: left;
-}
-
-.cases>.title__container>.case>.caseDescription{
-    width: 60%;
-    height: 20%;
-    margin-left: 10%;
-}
-
-.cases>.title__container input{
-    background: #63b5ae;
-    color: white;
-}
-
-/**/
-
-.costCalculation{
-    width: 100%;
-    height: 70%;
-    background: #fcfdfd;
-}
-
-.costCalculation>.title__container h2{
-    margin: 0px auto 40px auto;
-}
-
-.costCalculation>.title__container h3{
-    text-align: left;
-}
-
-.costCalculation>.title__container>.calculator{
-    width: 60%;
-    height: 40%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.costCalculation>.title__container>.calculator>.calcMenu{
-    width: 100%;
-    padding: 12px 12px;
-    background: #eee;
-    color: #999;
-    margin: 10px 0px 30px 0px;
-}
-
-.costCalculation>.title__container>.calculator>.results{
-    width: 100%;
-    height: 120px;
-    float: right;
-}
-
-.costCalculation>.title__container>.calculator>.results>.timing{
-    width: 80%;
-    float: left;
-    margin-bottom: 10px;
-}
-
-.costCalculation>.title__container>.calculator>.results>.totalTiming{
-    float: right;
-}
-
-.costCalculation>.title__container>.calculator>.results>.cost{
-    width: 80%;
-    float: left;
-}
-
-.costCalculation>.title__container>.calculator>.results>.totalCost{
-    float: right;
-}
-
-/**/
-
-.statistic{
-    width: 100%;
-    height: 404px;
-    background: url(../img/background_4.jpg) center/cover no-repeat fixed;
-}
-
-.statistic>.title__container{
-    width: 100%;
-}
-
-
-.statistic>.title__container h3{
-    margin: 40px auto 20px auto;
-}
-
-.statistic>.title__container li{
-    width: 25%;
-    height: 150px;
-    float: left;
-    margin-top: 70px;
-}
-
-.statistic>.title__container li img{
-    height: 75px;
-}
-
-.statistic>.title__container img{
-    margin-bottom: 20px;
-}
-
-.statistic>.title__container b{
-    font-size: 40px;
-}
-
-.statistic>.title__container p{
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-/**/
-
-.feedback{
-    width: 100%;
-    height: 523px;
-    background: white;   
-}
-
-.feedback>.title__container h3{
-    margin: 40px auto 20px auto;
-}
-
-.feedback>.title__container>.me{
-    border: 0px solid;
-    border-radius: 50%;
-    margin-top: 60px;
-}
-
-.feedback>.title__container p{
-    width: 60%;
-    margin: 20px auto;
-}
-
-.feedback>.title__container>.fbListImg{
-    width: 10%;
-    margin: auto;
-}
-
-.feedback>.title__container>.fbListImg img{
-    margin-left: 5px;
-}
-
-/**/
-
-.contacts{
-    width: 100%;
-    height: 808px;
-    background: url(../img/background_3.jpg) center/cover no-repeat;
-}
-
-.contacts>.title__container{
-    width: 100%;
-    height: 808px;
-}
-
-.contacts>.title__container h2{
-    color: white;
-}
-
-.contacts>.title__container h3{
-    margin: 60px auto 20px auto;
-    color: white;
-}
-
-.contacts>.title__container p{
-    color: white;
-}
-
-.contacts>.title__container>p{
-    margin-top: 15px;
-}
-
-.contacts>.title__container>.contactsUrl{
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.contacts>.title__container>.contactsUrl img{
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
-
-.contacts>.title__container>.contactsUrl li{
-    width:  33%;
-    height: 150px;
-    float: left;
+    margin-right: 20px;
     margin-top: 40px;
 }
 
-.contacts>.title__container>.msg{
-    width: 100%;
-    float: left;
-}
-
-.contacts>.title__container>.msg form .infoForm{
-    width: 30%;
-    margin: 15px 5px;
-    border-radius: 0px;
-    background: white;
-    opacity: 0.7;
-}
-
-.contacts>.title__container>.msg form textarea{
-    width: calc(60% + 10px);
-    height: 100px;
-    padding: 8px 12px;
-    opacity: 0.7;
-}
-
-.contacts>.title__container>.msg form .sendForm{
-    color: white;
-    margin-top: 40px;
-    padding: 14px 22px;
-}
-
-footer{
-    width: 100%;
-    height: 60px;
-    background: #354051;
-}
-
-footer>.copyright{
-    line-height: 60px;
-    text-align: center;
-}
-
-footer>.copyright p{
-    color: white;
-    font-size: 10px;
-}
-
-/*ANIMATION*/
-
-a{
-    color: white;
-}
-
-a:visited{
-    color: white;
-}
-
-a:hover{
-    transition: all 0.2s;
-    color: #d17700;
-}
-
-.logo a:hover{
-    color: white;
-}
-
-.logo{
-    animation: invis 2s ease;
-}
-
-.menu li a{
-    transform: scale(1);
-}
-
-.menu li a:active{
-    display: inline-block;
-    transform: scale(1.1);
-}
-
-.menu li:nth-child(1){
-    animation: setMenu 0.4s ease forwards, invis 0.4s ease;
-}
-
-.menu li:nth-child(2){
-    animation: setMenu 0.8s ease forwards, invis 0.8s ease;
-}
-
-.menu li:nth-child(3){
-    animation: setMenu 1.2s ease forwards, invis 1.2s ease;
-}
-
-.menu li:nth-child(4){
-    animation: setMenu 1.6s ease forwards, invis 1.6s ease;
-}
-
-.menu li:nth-child(5){
-    animation: setMenu 2.0s ease forwards, invis 2s ease;
-}
-
-.menu li:nth-child(6){
-    animation: setMenu 2.4s ease forwards, invis 2.4s ease;
-}
-
-.main>.title__container{
-    animation: setMainMenu 2s ease forwards, invis 2s ease;
-}
-
-.main>.title__container input{
-    transition: all 0.2s;
-}
-
-.main>.title__container input:hover{
-    color: white;
-    background: #2c384a;
-    opacity: 0.7;
-}
-
-.main>.title__container input:active{
-    transform: scale(1.1);
-}
-
-.aboutMe>.title__container input{
-    transition: all 0.2s;
-}
-
-.aboutMe>.title__container input:hover{
-    transform: scale(1.1);
-}
-
-.contacts>.title__container>.msg form .sendForm{
-    transition: all 0.2s;
-}
-
-.contacts>.title__container>.msg form .sendForm:hover{
-    padding: 16px 24px;
-    color: #d17700;
-    background: #2c384a;
-    opacity: 0.7;
-}
-
-.cases>.title__container input{
-    transition: all 0.2s;
-}
-
-.cases>.title__container input:hover{
-    background: #d17700;
-    color: black;
-}
-
-/*KEYFRAMES*/
-
-@keyframes invis{
-    from{
-        opacity: 0;
+@media (max-width: 991px) {
+    .title__container{
+        position: relative;
+        z-index: 3;
     }
     
-    to{
-        opacity: 1;
-    }
-}
-
-@keyframes setMenu{
-    from{
-        margin-top: -90px;
+    .title__container h1, .title__container h4, .title__container button{
+        color: white;
     }
     
-    to{
-        margin-top: 0;
-    }
-}
-
-@keyframes setMainMenu{
-    from{
-        margin-left: -300px;
+    .main{
+        position: relative;
     }
     
-    to{
-        margin-left: 5%;
+    .main::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
     }
 }
