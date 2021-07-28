@@ -112,7 +112,7 @@ nav a:hover{
 }
 
 .aboutMe .title__container img.manImg{
-    margin-top: 80px;
+    margin: 40px;
 }
 
 /**/
@@ -176,6 +176,8 @@ nav a:hover{
 
 @media (max-width: 425px){
     .aboutMe .title__container img.manImg{
-        margin-top: 20px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        height: 100px;
     }
 }
