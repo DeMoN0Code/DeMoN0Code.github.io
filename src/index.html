@@ -336,27 +336,36 @@
     </section>
     
     <section class="contacts">
-        <div class="container h-100">
-            <div class="row h-50 justify-content-center align-items-center text-center">
-                <div class="col-6">
-                    <div class="title__container">
+        <div class="container w-100 h-100">
+            <div class="row w-100 h-50 justify-content-center align-items-center text-center mx-auto">
+                <div class="col-md-10 col-12">
+                    <div class="title__container mt-5">
                         <h2>Мои контакты</h2>
                         <img src="img/line.png" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, sequi.</p>
-                        
-                        <ul class="d-flex justify-content-beetwen">
-                            <li><img src="img/gps.png" alt=""> <p>Санкт-Петербург<br>Невский проспект 11</p></li>
-                            <li><img src="img/message.png" alt=""> <p>info@companyname.com</p></li>
-                            <li><img src="img/mobile.png" alt=""> <p>+7 999 999-99-99</p></li>
+                        <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, consequatur?</p>
+                        <ul class="d-flex justify-content-between mt-5">
+                            <li><img src="img/gps.png" alt=""><p>Санкт-Петербург<br>Невский проспект 11</p></li>
+                            <li><img src="img/message.png" alt=""><p>info@companyname.com</p></li>
+                            <li><img src="img/mobile.png" alt=""><p>+7 999 999-99-99</p></li>
                         </ul>
+                        <h3 class="mt-5">Оставьте мне сообщение</h3>
+                        <form action="#">
+                            <div class="row mt-5">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Имя" aria-label="name">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Email" aria-label="email">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <textarea class="w-100 h-100 mt-3" name="message" id="msg" placeholder="Сообщение"></textarea>
+                                </div>
+                            </div>
+                            <input type="submit" class="btn btn-outline-light mt-5">
+                        </form>
                     </div>
-                </div>
-            </div>
-            <div class="row h-50">
-                <div class="col-8">
-                    <form action="#">
-                        
-                    </form>
                 </div>
             </div>
         </div>

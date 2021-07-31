@@ -218,6 +218,10 @@ nav .menu li{
     float: left;
 }
 
+.costCalc .title__container .cost h3{
+    font-weight: bold;
+}
+
 /*Тут на карусели не работают кнопки, надо разобраться почему*/
 
 .statistic{
@@ -269,6 +273,10 @@ nav .menu li{
     background: url(../img/background_3.jpg) center/cover no-repeat;
 }
 
+.contacts ul{
+    padding-left: 0;
+}
+
 .contacts li{
     width: 33%;
     height: 100px;
@@ -277,6 +285,16 @@ nav .menu li{
 
 .contacts p, .contacts h2, .contacts h3{
     color: white;
+}
+
+.contacts h3{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contacts form textarea{
+    border-radius: 5px;
+    padding: 10px;
 }
 
 /**/
@@ -332,5 +350,9 @@ footer p{
 @media (max-width: 505px){
     .costCalc .title__container h2{
         font-size: 16px;
+    }
+    
+    .contacts li{
+        width: 100%;
     }
 }
