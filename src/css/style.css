@@ -1,33 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
 html{
     scroll-behavior: smooth;
 }
 
 body{
     font-family: Arial, sans-serif;
-}
-
-p{
-    font-size: 14px;
-    color: #38475a;
+    margin: 0;
 }
 
 h1{
-    font-size: 60px;
     color: #223549;
+    font-size: 60px;
     font-weight: bold;
 }
 
 h2{
-    color: #1a2e43;
-    font-size: 26px;
+    font-size: 34px;
+    color: #102032;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 h3{
-    font-size: 20px;
+    font-size: 25px;
     color: #2f4154;
-    margin-top: 0px;
 }
 
 h4{
@@ -35,21 +34,15 @@ h4{
     color: #76828e;
 }
 
-h5{
-    font-size: 14px;
-    color: #e87700;
+p{
+    font-size: 12px;
+    color: #38475a;
 }
 
-.anker{
-    position: relative;
-    bottom: 90px;
-    left: 0px;
-}
-
-.mainAnker{
-    position: absolute;
-    top: 0;
-    left: 0;
+.titleHeader{
+    padding-top: 105px;
+    padding-bottom: 60px;
+    margin: 0;
 }
 
 /**/
@@ -57,44 +50,20 @@ h5{
 nav{
     width: 100%;
     height: 60px;
-    background: #2b3e51;
+    background: #2a3e51;
     position: fixed;
-    z-index: 10;
 }
 
-nav a{
-    text-decoration: none;
+.menu li{
     color: white;
-}
-
-nav a:visited{
-    color: white;
-}
-
-nav a:hover{
-    color: white;
+    text-transform: uppercase;
+    
 }
 
 .logo{
-    line-height: 60px;
     font-size: 18px;
-    font-weight: bold;
-}
-
-nav .menu{
-    float: left;
+    color: white;
     line-height: 60px;
-}
-
-nav .menu li{
-    float: left;
-    margin-left: 25px;
-    text-transform: uppercase;
-    font-size: 14px;
-}
-
-.mobileMenu a:visited{
-    color: black;
 }
 
 /**/
@@ -103,70 +72,52 @@ nav .menu li{
     width: 100%;
     height: 100%;
     background: url(../img/man.png) 95% 100%/auto 85% no-repeat, url(../img/background.jpg) center/cover no-repeat;
-    position: relative;
 }
 
-.main .title__container{
-    width: 100%;
-    height: 100%;
+.mainButtons{
+    margin-top: 55px;
 }
 
-.mainButtons li{
-    float: left;
-    margin-right: 20px;
-    margin-top: 40px;
+.mainButtons button{
+    margin: 0 5px;
 }
 
 /**/
 
 .aboutMe{
     width: 100%;
-    height: 716px;
-    background: #fcfdfd;
+    height: 720px;
 }
 
-.aboutMe .title__container{
-    width: 100%;
-    height: 100%;
+.aboutMe .titleContainer img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
 }
 
-.aboutMe .title__container p{
-    margin: 20px 0px;
-}
-
-.aboutMe .title__container img.manImg{
-    margin: 40px;
+.aboutMe .titleContainer p{
+    text-align: left;
 }
 
 /**/
 
 .skills{
     width: 100%;
-    height: 530px;
+    height: 520px;
     background: url(../img/background_2.jpg) center/cover no-repeat;
 }
 
-.skills .title__container{
-    position: relative;
-    z-index: 3;
-}
-
-.skills .title__container img{
-    margin-bottom: 30px;
-}
-
-.skills .title__container li{
-    width: 25%;
-    float: left;
-}
-
-.skills .title__container li img{
-    margin-top: 60px;
+.skills .titleContainer img{
     height: 50px;
+    margin-bottom: 40px;
 }
 
-.carousel img{
-    height: 50px;
+.skills .titleContainer h4{
+    color: #e87700;
+}
+
+.skills .carousel p{
+    margin: 0;
 }
 
 /**/
@@ -176,67 +127,74 @@ nav .menu li{
     height: 100%;
 }
 
-.cases .title__container{
+.cases .titleHeader{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.cases .caseHead p{
+    margin-bottom: 20px;
+}
+
+.cases .caseImg img{
     width: 100%;
-    height: 100%;
 }
 
-.cases .title__container img.case{
-    width: 100%;
+.cases .caseInfo h2{
+    font-size: 19px;
+    color: #2f4154;
 }
 
-.cases .container .row{
-    margin-right: 0;
-}
-
-/*Калькулятор снова на костылях(исправлю позже)*/
-
-.costCalc{
-    width: 100%;
-    height: 100%;
-}
-
-.costCalc .title__container{
-    height: 80%;
-    width: 60%;
-    box-shadow: 0px 0px 10px black;
-}
-
-.costCalc .title__container h2{
-    text-align: center;
-    margin-top: 20px;
-}
-
-.costCalc .title__container .menu h2{
-    text-transform: uppercase;
-    text-align: left;
-    margin-top: 30px;
-}
-
-.costCalc .title__container .menu{
-    width: 100%;
-    margin-top: 120px;
-    margin-bottom: 160px;
-    padding-left: 10px;
-}
-
-.costCalc .title__container .menu select{
-    background-color: #efefef;
-    color: #737373;
-    width: calc(100% - 10px);
-    padding: 5px;
-    text-align: left;
-}
-
-.costCalc .title__container .cost .totalName{
-    float: left;
-}
-
-.costCalc .title__container .cost h3{
+.cases .caseInfo h3{
+    font-size: 19px;
+    color: #2f4154;
     font-weight: bold;
 }
 
-/*Тут на карусели не работают кнопки, надо разобраться почему*/
+/**/
+
+.costCalc{
+    margin-top: 40px;
+    width: 100%;
+    height: 840px;
+}
+
+.costCalc .block{
+    box-shadow: 0px 0px 7px black;
+    margin-top: 20px;
+}
+
+.costCalc h2{
+    margin-top: 20px;
+}
+
+.costCalc .blockFields h3{
+    text-transform: uppercase;
+}
+
+.costCalc .blockFields{
+    padding: 0 5%;
+    margin-top: 40px;
+}
+
+.costCalc .blockFields select{
+    width: 100%;
+    margin-bottom: 60px;
+    padding: 14px 5px;
+    background: #eee;
+    color: #747474;
+}
+
+.costCalc .totalBlock{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.costCalc .totalBlock img{
+    width: 100%;
+}
+
+/**/
 
 .statistic{
     width: 100%;
@@ -244,130 +202,121 @@ nav .menu li{
     background: url(../img/background_4.jpg) center/cover no-repeat fixed;
 }
 
-.statistic .title__container{
-    position: relative;
-    z-index: 3;
-}
-
-.statistic .title__container img{
-    margin-bottom: 30px;
-}
-
-.statistic .title__container li{
-    width: 25%;
-    float: left;
-}
-
-.statistic .title__container li img{
-    margin-top: 60px;
+.statistic .titleContainer img{
     height: 50px;
+    margin-bottom: 10px;
 }
 
-.carousel img{
-    height: 50px;
-}
-
-/*В будущем добавлю карусель с отзывами*/
+/**/
 
 .feedback{
     width: 100%;
     height: 600px;
 }
 
-.feedback .title__container{
-    width: 100%;
-    height: 100%;
-}
-
 /**/
 
 .contacts{
     width: 100%;
-    height: 100%;
+    height: 800px;
     background: url(../img/background_3.jpg) center/cover no-repeat;
 }
 
-.contacts ul{
-    padding-left: 0;
-}
-
-.contacts li{
-    width: 33%;
-    height: 100px;
-    float: left;
-}
-
-.contacts p, .contacts h2{
+.contacts h2, .contacts p{
     color: white;
 }
 
-.contacts h3{
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
+.contacts .titleHeader{
+    padding-bottom: 20px;
+    padding-top: 60px;
 }
 
-.contacts form textarea{
-    border-radius: 5px;
-    padding: 10px;
+.contacts .contactsHead p{
+    margin-bottom: 20px;
+}
+
+.contacts .contactList{
+    height: 76px;
+    margin: 30px 0;
+}
+
+.contacts .contactList ul{
+    padding: 0;
+}
+
+.contacts .contactList li{
+    width: 140px;
+}
+
+.contacts .form h2{
+    margin-bottom: 60px;
+}
+
+.contacts .form textarea{
+    width: 100%;
+    height: 90px;
+    padding: 5px;
+    resize: none;
 }
 
 /**/
 
-footer{
+.footer{
     width: 100%;
     height: 40px;
-    background: #2c3e51;
-    text-align: center;
     line-height: 40px;
+    background: #2a3e51;
 }
 
-footer p{
+.footer p{
     color: white;
 }
 
 /*MEDIA*/
 
-@media (max-width: 991px) {
-    .main .title__container{
-        position: relative;
-        z-index: 3;
-    }
-    
-    .main .title__container h1, .main .title__container h4, .main .title__container button{
-        color: white;
+@media (max-width: 991px){
+    nav{
+        z-index: 10;
     }
     
     .main{
         position: relative;
     }
     
+    .mainInfo h1, .mainInfo h4{
+        color: white;
+    }
+    
+    .mainButtons button{
+        border-color: white;
+        color: white;
+    }
+    
     .main::after{
         content: "";
         position: absolute;
-        top: 0;
-        bottom: 0;
         left: 0;
         right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
         background: rgba(0, 0, 0, 0.4);
         z-index: 1;
     }
-}
-
-@media (max-width: 425px){
-    .aboutMe .title__container img.manImg{
-        margin-top: 10px;
-        margin-bottom: 0px;
-        height: 100px;
+    
+    .main .mainInfo{
+        position: relative;
+        z-index: 3;
     }
 }
 
-@media (max-width: 505px){
-    .costCalc .title__container h2{
-        font-size: 16px;
+@media (max-width: 400px){
+    .logo{
+        display: none;
     }
     
-    .contacts li{
-        width: 100%;
+    .feedback .titleHeader{
+        padding: 0;
     }
 }
