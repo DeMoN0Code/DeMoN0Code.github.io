@@ -48,7 +48,6 @@ function processingRequest(str, arr){
 
 function main(){
     let site = processingRequest("Какой тип сайта вам нужен?", siteTypes);
-    console.log(site);
     if(site != -1){
         let design = processingRequest("Какой дизайн вам нужен?", designs);
         if(design != -1){
