@@ -45,6 +45,25 @@ p{
     margin: 0;
 }
 
+.menu li{
+    margin-top: -100px;
+    opacity: 0.7;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu li a:visited{
+    color: white;
+}
+
+.anker{
+    position: relative;
+    bottom: 60px;
+}
+
 /**/
 
 nav{
@@ -52,6 +71,7 @@ nav{
     height: 60px;
     background: #2a3e51;
     position: fixed;
+    z-index: 10;
 }
 
 .menu li{
@@ -252,11 +272,12 @@ nav{
     margin-bottom: 60px;
 }
 
-.contacts .form textarea{
+.form textarea{
     width: 100%;
     height: 90px;
     padding: 5px;
     resize: none;
+    border: solid 1px;
 }
 
 /**/
@@ -311,12 +332,29 @@ nav{
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 477px){
     .logo{
-        display: none;
+        font-size: 0;
+    }
+    
+    .logo::before{
+        content: "Д. Наставшев";
+        font-size: 16px;
     }
     
     .feedback .titleHeader{
         padding: 0;
     }
+}
+
+/*ANIMATIONS*/
+
+.block-anim{
+    opacity: 0;
+}
+
+.block-anim-show{
+    opacity: 1;
+    transition: opacity 1.5s;
+    z-index: 1;
 }

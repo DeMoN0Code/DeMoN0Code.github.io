@@ -4,67 +4,59 @@ let calc = {
     design: 0,
     type: 0,
     adapt: 0,
-    calculate: function(){
+    timeT: 0,
+    timeD: 0,
+    timeA: 0,
+    calculateCost: function(){
         return this.design + this.type + this.adapt;
+    },
+    calculateTime: function(){
+        return this.timeA + this.timeD + this.timeT;  
     },
 };
 
 let siteTypes = [
-    ["Лендинг", 1000],
-    ["Магазин", 2000],
-    ["Корпоративный", 3000],
+    ["Лендинг", 1000, 1],
+    ["Магазин", 2000, 3],
+    ["Корпоративный", 3000, 3],
 ];
 
 let designs = [
-    ["Свой", 0],
-    ["Уникальный", 2000],
-    ["Шаблонный", 1000],
+    ["Свой", 0, 0],
+    ["Уникальный", 2000, 5],
+    ["Шаблонный", 1000, 3],
 ];
 
 let adapts = [
-    ["Мобильные", 2000],
-    ["Пк", 2000],
-    ["Все", 3500],
+    ["Мобильные", 2000, 0],
+    ["Пк", 2000, 0],
+    ["Все", 3500, 1],
 ];
 
-function strGenerate(str, arr){
-    let temp = str;
-    for(let i = 0; i < arr.length; i++){
-       temp += "\n" + (i + 1) + ". " + arr[i][0]; 
-    }
-    return temp;
+function dataUpdate(){
+    $("#cost").text(calc.calculateCost());
+    $("#time").text(calc.calculateTime());
 }
 
-function processingRequest(str, arr){
-    let temp = prompt(strGenerate(str, arr));
-    for(let i = 0; i < arr.length; i++){
-        if(temp.toLowerCase() == arr[i][0].toLowerCase() || Number(temp) == i + 1){
-            return arr[i][1];
-        }
-    }
+$(document).ready(function(){
+    $("#siteType").change(function(){
+        let num = Number($(this).val()) - 1;
+        calc.type = siteTypes[num][1];
+        calc.timeT = siteTypes[num][2];
+        dataUpdate();
+    });
     
-    return -1;
-}
-
-function main(){
-    let site = processingRequest("Какой тип сайта вам нужен?", siteTypes);
-    if(site != -1){
-        let design = processingRequest("Какой дизайн вам нужен?", designs);
-        if(design != -1){
-            let adapt = processingRequest("Какой адаптив вам нужен?", adapts);
-            if(adapt != -1){
-                calc.type = site;
-                calc.design = design;
-                calc.adapt = adapt;
-                
-                confirm(`Цена: ${calc.calculate()}, вас устроит?`);
-                return 0;
-            }
-        }
-    }
+    $("#siteDesign").change(function(){
+        let num = Number($(this).val()) - 1;
+        calc.design = designs[num][1];
+        calc.timeD = designs[num][2];
+        dataUpdate();
+    });
     
-    alert("Посмотрите информацию о моём скилле и воспользуйтесь калькулятором:D");
-    return 0;
-}
-
-main();
+    $("#adapt").change(function(){
+        let num = Number($(this).val()) - 1;
+        calc.adapt = adapts[num][1];
+        calc.timeA = adapts[num][2];
+        dataUpdate();
+    });
+});
