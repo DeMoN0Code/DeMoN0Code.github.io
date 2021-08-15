@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css">
 </head>
 
 <body>
@@ -19,23 +20,23 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="#">
+                    <form action="php/mailRequest.php" method="post" class="request">
                         <div class="row form justify-content-center text-center g-3 block-anim">
 
                             <div class="col-12">
                                 <h2>Оставьте заявку</h2>
                             </div>
                             <div class="col-4">
-                                <input type="text" class="form-control" placeholder="Имя" aria-label="Имя">
+                                <input type="text" class="form-control" placeholder="Имя" aria-label="Имя" id="modalName" name="name">
                             </div>
                             <div class="col-4">
-                                <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                                <input type="email" class="form-control" placeholder="Email" aria-label="Email" id="modalEmail" name="email">
                             </div>
                             <div class="col-8">
-                                <textarea name="msg" id="msg" placeholder="Сообщение"></textarea>
+                                <textarea name="msg" id="modalMsg" placeholder="Сообщение"></textarea>
                             </div>
                             <div class="col-12">
-                                <input type="submit" class="btn btn-info">
+                                <input type="submit" class="btn btn-info"  id="modalSubmit">
                             </div>
                         </div>
                     </form>
@@ -388,6 +389,37 @@
         </div>
     </section>
     
+    <section class="fbForm">
+        <div class="container h-100">
+            <div class="row titleHeader text-center">
+                <div class="col">
+                    <h2>Оставьте отзыв</h2>
+                    <img src="img/line.png" alt="">
+                </div>
+            </div>
+            <div class="row titleContainer">
+                <div class="col">
+                    <form action="php/mailFb.php" method="post" class="fb">
+                        <div class="row justify-content-center text-center">
+                            <div class="col-5">
+                                <input type="name" class="input wow animate__animated animate__fadeInUp" data-wow-delay="0.5s" placeholder="Имя" name="name" id="name">
+                            </div>
+                            <div class="col-5">
+                                <input type="phone" class="input wow animate__animated animate__fadeInUp" placeholder="Телефон" data-wow-delay="1s" name="phone" id="phone">
+                            </div>
+                            <div class="col-10">
+                                <textarea name="fbMessage" id="fbMessage" placeholder="Отзыв" class="wow animate__animated animate__fadeInUp" data-wow-delay="1.5s"></textarea>
+                            </div>
+                            <div class="col-4">
+                                <input type="submit" class="btn btn-outline-secondary mt-4" name="fbSubmit" id="fbSubmit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <section class="contacts">
         <div class="anker" id="contacts"></div>
         <div class="container h-100">
@@ -399,7 +431,7 @@
             </div>
             <div class="row contactsHead text-center">
                 <div class="col">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, natus.</p>
+                    <p>Вы можете написать мне или позвонить!</p>
                 </div>
             </div>
             <div class="row contactList text-center justify-content-center block-anim">
@@ -407,15 +439,19 @@
                     <ul class="d-flex w-100 h-100 justify-content-between m-0">
                         <li>
                             <img src="img/gps.png" alt="">
-                            <p>Санкт-Петербург<br>Невский проспект 11</p>
+                            <p>Магнитогорск<br>Серова 7</p>
                         </li>
                         <li>
-                            <img src="img/message.png" alt="">
-                            <p>info@companyname.com</p>
+                            <a href="mailto:dmitrynastavshev@mail.ru" target="_blank">
+                                <img src="img/message.png" alt="">
+                            </a>
+                            <p>dmitrynastavshev@mail.ru</p>
                         </li>
                         <li>
-                            <img src="img/mobile.png" alt="">
-                            <p>+7 999 999-99-99</p>
+                            <a href="tel:+79048183209">
+                                <img src="img/mobile.png" alt="">
+                            </a>
+                            <p>+7 904 818-32-09</p>
                         </li>
                     </ul>
                 </div>
@@ -424,15 +460,19 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active w-80">
                                 <img src="img/gps.png" alt="">
-                                <p>Санкт-Петербург<br>Невский проспект 11</p>
+                                <p>Магнитогорск<br>Серова 7</p>
                             </div>
                             <div class="carousel-item w-80">
-                                <img src="img/message.png" alt="">
-                                <p>info@companyname.com</p>
+                                <a href="mailto:dmitrynastavshev@mail.ru" target="_blank">
+                                    <img src="img/message.png" alt="">
+                                </a>
+                                <p>dmitrynastavshev@mail.ru</p>
                             </div>
                             <div class="carousel-item w-80">
-                                <img src="img/mobile.png" alt="">
-                                <p>+7 999 999-99-99</p>
+                                <a href="tel:+79048183209">
+                                    <img src="img/mobile.png" alt="">
+                                </a>
+                                <p>+7 904 818-32-09</p>
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselCont"  data-bs-slide="prev">
@@ -446,38 +486,48 @@
                     </div>
                 </div>
             </div>
-            <form action="#">
+            <form action="php/mailRequest.php" method="post" class="request">
                 <div class="row form justify-content-center text-center g-3 block-anim">
 
                     <div class="col-12">
                         <h2>Оставьте мне сообщение</h2>
                     </div>
                     <div class="col-4">
-                        <input type="text" class="form-control" placeholder="Имя" aria-label="Имя">
+                        <input type="text" class="form-control" placeholder="Имя" aria-label="Имя" id="contName" name="name">
                     </div>
                     <div class="col-4">
-                        <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                        <input type="email" class="form-control" placeholder="Email" aria-label="Email" id="email" name="email">
                     </div>
                     <div class="col-8">
                         <textarea name="msg" id="msg" placeholder="Сообщение"></textarea>
                     </div>
                     <div class="col-12">
-                        <input type="submit" class="btn btn-outline-light">
+                        <input type="submit" class="btn btn-outline-light" id="submit">
                     </div>
                 </div>
             </form>
         </div>
     </section>
     
+    <seciton class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8de20769ba2b2a7df2dd6314ce78efa3bc56c3ac3a54ac48febbeaa24e03dca2&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+    </seciton>
+    
     <footer class="footer text-center">
         <p>Copyright © 2021 Дмитрий Наставшев. Design by Web</p>
     </footer>
     
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="js/animate.js"></script>
     <script src="js/calc.js"></script>
+    <script src="js/validation.js"></script>
 </body>
 
 </html>
