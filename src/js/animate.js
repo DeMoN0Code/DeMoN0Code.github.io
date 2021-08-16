@@ -58,7 +58,6 @@ function statisticAnim(msec, iterationCount){
             interv = setInterval(function(){
             if(totalNum <= num){
                 that.html(totalNum.toFixed());
-                console.log(totalNum);
             }
             else{
                 clearInterval(interv);

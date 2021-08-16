@@ -1,9 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Дмитрий Наставшев - Веб-разработчик</title>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/animate.js"></script>
+    <script src="js/calc.js"></script>
+    <script src="js/validation.js"></script>
+
+<!--Yandex.Metrika counter-->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(84028639, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/84028639" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!--Yandex.Metrika counter-->
+    <script src="js/map.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -93,9 +122,9 @@
                     <h1>Привет<br>Я Дмитрий Наставшев</h1>
                     <h4>Фулл стек веб-разработчик</h4>
                     <div class="mainButtons">
-                        <a href="#aboutMe"><button type="button" class="btn btn-outline-secondary">Обо мне</button></a>
+                        <button type="button" class="btn btn-outline-secondary" onclick="window.location.href='#cases'">Обо мне</button>
                         
-                        <a href="#cases"><button type="button" class="btn btn-outline-secondary">Мои работы</button></a>
+                        <button type="button" onclick="window.location.href='#cases'; ym(84028639,'reachGoal','cases'); return true;" class="btn btn-outline-secondary">Мои работы</button>
                     </div>
                 </div>
             </div>
@@ -221,13 +250,13 @@
                     <p>http://www.somedomain.com</p>
                 </div>
                 <div class="col">
-                    <h3>Название проекта</h3>
+                    <h3>Somedomain</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda alias quia facere autem perspiciatis odio fugiat pariatur recusandae vel, doloribus nihil quam, earum voluptates nesciunt accusamus sapiente culpa, eius. Dicta numquam quaerat, dolore voluptas. Cum, necessitatibus repellat natus ipsam tempore.</p>
                 </div>
             </div>
             <div class="row caseButton block-anim">
                 <div class="col">
-                    <a href="http://www.somedomain.com" target="_blank"><button type="button" class="btn btn-info">Перейти на сайт</button></a>
+                    <button type="button" class="btn btn-info" onclick="window.location.href='http://www.somedomain.com'">Перейти на сайт</button>
                 </div>
             </div>
         </div>
@@ -402,10 +431,10 @@
                     <form action="php/mailFb.php" method="post" class="fb">
                         <div class="row justify-content-center text-center">
                             <div class="col-5">
-                                <input type="name" class="input wow animate__animated animate__fadeInUp" data-wow-delay="0.5s" placeholder="Имя" name="name" id="name">
+                                <input type="text" class="input wow animate__animated animate__fadeInUp" data-wow-delay="0.5s" placeholder="Имя" name="name" id="name">
                             </div>
                             <div class="col-5">
-                                <input type="phone" class="input wow animate__animated animate__fadeInUp" placeholder="Телефон" data-wow-delay="1s" name="phone" id="phone">
+                                <input type="tel" class="input wow animate__animated animate__fadeInUp" placeholder="Телефон" data-wow-delay="1s" name="phone" id="phone">
                             </div>
                             <div class="col-10">
                                 <textarea name="fbMessage" id="fbMessage" placeholder="Отзыв" class="wow animate__animated animate__fadeInUp" data-wow-delay="1.5s"></textarea>
@@ -509,25 +538,12 @@
         </div>
     </section>
     
-    <seciton class="map">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8de20769ba2b2a7df2dd6314ce78efa3bc56c3ac3a54ac48febbeaa24e03dca2&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
-    </seciton>
+    <div class="map" id="map" style="width: 100%; height: 400px"></div>
     
     <footer class="footer text-center">
         <p>Copyright © 2021 Дмитрий Наставшев. Design by Web</p>
     </footer>
     
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-    <script src="js/animate.js"></script>
-    <script src="js/calc.js"></script>
-    <script src="js/validation.js"></script>
 </body>
 
 </html>
